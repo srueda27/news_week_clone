@@ -83,3 +83,7 @@ ol,
 ul {
   list-style: none;
 }
+
+a:hover {
+  text-decoration: none;
+}
