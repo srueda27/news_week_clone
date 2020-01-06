@@ -13,7 +13,6 @@ html {
     display: grid;
     grid-template-columns: 1fr max-content 35px;
     align-items: center;
-    position: fixed;
 }
 
 .navbar-toggler {
@@ -88,34 +87,38 @@ html {
 /* #region main  */
 main {
     padding: 1rem;
-    position: relative;
-    top: 50px;
+}
+
+.section {
+    margin: 15px 0 10px;
 }
 
 .top-story {
-    width: 100%;
+    margin-top: 0;
 }
 
 .section--title {
-    font: bold 16px/16px "Roboto Condensed",sans-serif;
+    font: bold 16px/16px 'Roboto Condensed',sans-serif;
     text-transform: uppercase;
     color: rgba(3, 3, 3, 0.4);
+    padding: 10px 0;
 }
 
+.image-100 {
+    width: 100%;
+}
+
+/* #region image-section */
 .image-container {
     position: relative;
-    margin: 10px 0;
-}
-
-.image__img {
-    width: 100%;
+    margin-bottom: 10px;
 }
 
 .image__title {
     position: absolute;
     width: 80px;
     height: 33px;
-    font: bold 17px "Roboto Condensed",sans-serif;
+    font: bold 17px 'Roboto Condensed',sans-serif;
     line-height: 33px;
     background-color: rgba(255,255,255,.9);
     text-align: center;
@@ -130,11 +133,14 @@ main {
 }
 
 .image--title {
-    font: bold 22px/24px "Roboto Condensed",sans-serif;
+    font: bold 22px/24px 'Roboto Condensed',sans-serif;
+}
+
+.image--title__link {
     color: black;
 }
 
-.image--title:hover {
+.image--title__link:hover {
     color: black;
     text-decoration: red underline;
 }
@@ -144,6 +150,83 @@ main {
     font: normal 13px/18px Arial;
     color: black;
 }
+/* #endregion image-section */
+
+/* #region left image container */
+.left-image-container {
+    min-height: 120px;
+    margin-bottom: 10px;
+}
+
+.left-image {
+    margin: 10px 15px 5px 0;
+    width: 135px;
+    height: 90px;
+    float: left;
+}
+
+.sm-title {
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.top-border {
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+/* #endregion left image container */
+
+/* #region complete-image */
+.complete-image-container {
+    margin-bottom: 10px;
+}
+
+.complete-image-inside {
+    padding: 0 10px;
+}
+
+.complete-image__title {
+    font: 20px/22px "Lora",serif;
+    margin: 10px 0;
+}
+
+.complete-image__title__link {
+    color: #272727;
+}
+
+.complete-image__title__link:hover {
+    color: #272727;
+}
+
+.complete-image--text {
+    font: 15px/20px Arial,sans-serif;
+    color: rgba(39,39,39,.5);
+}
+
+.complete-image-tag {
+    display: inline-block;
+    background-color: #c2d4d7;
+    color: #666;
+    font: 13px/20px Arial,sans-serif;
+    padding: 0 6px;
+    margin: 10px 0;
+}
+
+.complete-image-tag:hover {
+    background-color: #272727;
+    color: #c2d4d7;
+}
+/* #endregion complete-image */
+
+.culture-travel {
+    background-color: #f4f5f7;
+}
+
+.culture-travel__title {
+    padding: 10px;
+    color: rgba(3, 3, 3, 0.5);
+}
+
 
 /* #endregion main */
 
@@ -159,9 +242,45 @@ main {
         display: initial;
     }
     /* #endregion navbar */
+
+    .left-image-container {
+        min-height: 200px;
+    }
+
+    .left-image {
+        width: 258px;
+        height: 172px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
+    .image--text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .center-column {
+        display: grid;
+        grid-template-areas: 
+        "top-story"
+        "culture-travel"
+        "more-stories";
+    }
+
+    .top-story {
+        grid-area: top-story;
+    }
+
+    .culture-travel-container {
+        grid-area: culture-travel;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    .more-stories {
+        grid-area: more-stories;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -169,6 +288,7 @@ main {
     .main-navbar {
         padding: 0;
         height: 150px;
+        position: fixed;
         grid-template-columns: 1fr 60% 1fr;
         grid-template-rows: 95px 55px;
         grid-template-areas: 
@@ -230,5 +350,10 @@ main {
         font-size: 21px;
     }
     /* #endregion navbar */
+
+    main {
+        position: relative;
+        top: 151px;
+    }
 }
 /* #endregion media queries */
