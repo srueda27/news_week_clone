@@ -14,6 +14,20 @@ html {
   width: 100%;
 }
 
+.sm-title {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.md-title {
+  font-size: 20px;
+}
+
+.top-border {
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
 /* #region image-section */
 .image-section {
   margin-bottom: 20px;
@@ -58,7 +72,7 @@ html {
 .image--text {
   margin-top: 10px;
   font: normal 13px/18px Arial, sans-serif;
-  color: black;
+  color: #333;
 }
 
 /* #endregion image-section */
@@ -74,20 +88,6 @@ html {
   width: 135px;
   height: 90px;
   float: left;
-}
-
-.sm-title {
-  font-size: 17px;
-  line-height: 20px;
-}
-
-.md-title {
-  font-size: 20px;
-}
-
-.top-border {
-  padding-top: 10px;
-  border-top: 1px solid #ddd;
 }
 
 /* #endregion left image container */
@@ -243,6 +243,40 @@ main {
   color: rgba(3, 3, 3, 0.5);
 }
 
+.opinion-container {
+  padding-bottom: 10px;
+}
+
+.opinion__img__link {
+  margin-right: 13px;
+}
+
+.opinion__img {
+  width: 63px;
+  height: 63px;
+}
+
+.opinion__title {
+  font-size: 17px;
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+
+.opinion__title__link:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.opinion__author {
+  font: bold 14px/21px 'Roboto Condensed', sans-serif;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.latests-news__img {
+  width: 135px;
+  height: 90px;
+}
 
 /* #endregion main */
 
@@ -273,11 +307,11 @@ main {
 @media only screen and (min-width: 768px) {
   .three-column-container {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: calc(45% - 15px) calc(55% - 15px);
+    grid-gap: 30px;
     grid-template-areas:
       "featured-stories center-column"
-      "opinon opinon"
-      "latest-news latest-news";
+      "right-column right-column";
   }
 
   .image--text {
@@ -294,14 +328,16 @@ main {
     height: 90px;
   }
 
+  .right-column {
+    grid-area: right-column;
+  }
+
   .featured-stories {
     grid-area: featured-stories;
-    padding-right: 15px;
   }
 
   .center-column {
     grid-area: center-column;
-    padding-left: 15px;
     display: grid;
     grid-template-areas:
       "top-story"
@@ -397,6 +433,23 @@ main {
   main {
     position: relative;
     top: 151px;
+  }
+
+  .three-column-container {
+    grid-template-columns: calc(30% - 20px) calc(40% - 20px) calc(30% - 20px);
+    grid-template-areas: "left-column center-column right-column";
+  }
+
+  .featured-stories {
+    grid-area: left-column;
+  }
+
+  .center-column {
+    grid-area: center-column;
+  }
+
+  .right-column {
+    grid-area: right-column;
   }
 }
 
