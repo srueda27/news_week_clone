@@ -451,6 +451,25 @@ main {
 
 /* #endregion magazine  */
 
+.slideshow__tag {
+    position: absolute;
+    bottom: 0;
+}
+
+.slideshow__tag__img {
+    width: 70px;
+    height: 52px;
+}
+
+.slideshow-number {
+    position: absolute;
+    left: 28px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 58px;
+    color: #e9212e;
+}
+
 /* #endregion main */
 
 /* #region media queries */
@@ -560,7 +579,13 @@ main {
   .editors-picks-container {
     display: grid;
     grid-template-columns: calc(50% - 15px) calc(50% - 15px);
-    grid-gap: 30px;
+    grid-gap: 20px 30px;
+  }
+
+  .featured-slideshow-container {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.66% - 22.5px));
+    grid-gap: 20px 30px;
   }
 }
 
