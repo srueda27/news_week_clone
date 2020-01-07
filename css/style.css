@@ -4,7 +4,7 @@ html {
 }
 
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .section--title {
@@ -281,151 +281,174 @@ main {
 
 /* #region conversations */
 .logo-section-title {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 .logo-section-title__title {
-    font: bold 19px/19px 'Roboto Condensed', sans-serif;
-    color: #333333;
-    position: relative;
-    top: 5px;
+  font: bold 19px/19px 'Roboto Condensed', sans-serif;
+  color: #333;
+  position: relative;
+  top: 5px;
 }
 
 .logo-section-title__logo {
-    width: 28px;
-    height: 28px;
-    background-color: red;
-    margin-right: 10px;
+  width: 28px;
+  height: 28px;
+  background-color: red;
+  margin-right: 10px;
 }
 
 .conversations {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .conversations-img-container {
-    position: relative;
-    padding: 0;
+  position: relative;
+  padding: 0;
 }
 
 .conversations-img {
-    display: block;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  display: block;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .conversations-img-side {
-    padding: 10px 15px 10px 0;
+  padding: 10px 15px 10px 0;
 }
 
 .conversations-big-img {
-    background-image: url(../images/conversations/newsweek_conversations_paul_wesley.jpg);
+  background-image: url(../images/conversations/newsweek_conversations_paul_wesley.jpg);
 }
 
 .conversations-side {
-    border-top: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 
 .conversations-side-first {
-    background-image: url(../images/conversations/newsweek_conversations_leslie_grossman.jpg);
+  background-image: url(../images/conversations/newsweek_conversations_leslie_grossman.jpg);
 }
 
 .conversations-side-second {
-    background-image: url(../images/conversations/newsweek_conversations_willem_dafoe.jpg);
+  background-image: url(../images/conversations/newsweek_conversations_willem_dafoe.jpg);
 }
 
 .conversations-side-third {
-    background-image: url(../images/conversations/newsweek_conversations_matthew_modine.jpg);
+  background-image: url(../images/conversations/newsweek_conversations_matthew_modine.jpg);
 }
 
 .play-icon {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 34px;
-    height: 34px;
-    background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  background-color: red;
 }
 
 .play-icon-svg {
-    fill: white;
+  fill: white;
 }
 
 .conversations-text-container {
-    padding: 40px 25px 30px;
-    background-color: black;
+  padding: 40px 25px 30px;
+  background-color: black;
 }
 
 .conversations-text-side {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .conversations-title {
-    font: 28px/32px 'Roboto Condensed', sans-serif;
+  font: 28px/32px 'Roboto Condensed', sans-serif;
 }
 
 .conversation-title-side {
-    font-size: 18px;
-    line-height: 20px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .conversations-title__link {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .conversations-title__link:hover {
-    text-decoration: underline red;
-    color: white;
+  text-decoration: underline red;
+  color: white;
 }
 
 .conversations-description {
-    font: 15px/20px Arial, sans-serif;
-    color: #ffffff;
+  font: 15px/20px Arial, sans-serif;
+  color: #fff;
 }
 
 .conversations-time {
-    font: 18px/18px Arial, sans-serif;
-    color: #777777;
+  font: 18px/18px Arial, sans-serif;
+  color: #777;
 }
+
 /* #endregion conversations */
 
 /* #region magazine  */
+.magazine-card {
+  margin-bottom: 10px;
+}
+
 .magazine-tag {
-    font: 16px/26px 'Roboto Condensed', sans-serif;
-    display: inline-block;
-    padding: 0 7px;
-    margin: 5px 0;
+  font: 16px/26px 'Roboto Condensed', sans-serif;
+  display: inline-block;
+  padding: 0 7px;
+  margin: 5px 0;
 }
 
 .red-tag {
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
 
 .white-tag__link {
-    color: red;
+  color: red;
 }
 
 .white-tag__link:hover {
-    color: red;
+  color: red;
 }
 
 .magazine-title {
-    font: 16px/16px 'Roboto Condensed', sans-serif;
+  font: 16px/16px 'Roboto Condensed', sans-serif;
 }
 
 .magazine-title__link {
-    color: black;
+  color: black;
 }
 
 .magazine-title__link:hover {
-    text-decoration: red underline;
-    color: black;
+  text-decoration: red underline;
+  color: black;
 }
+
+.magazine-last-img {
+    position: relative;
+}
+
+.magazine-last-tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+
+.magazine-last {
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
 /* #endregion magazine  */
 
 /* #endregion main */
@@ -491,14 +514,42 @@ main {
 
   .lside {
     padding-right: 0;
-}
+  }
 
-.rside {
+  .rside {
     padding-left: 0;
-}
+  }
 
   .conversations-text-order-first {
-      order: -1;
+    order: -1;
+  }
+
+  .magazine {
+      display: grid;
+      grid-template-columns: calc(25% - 10px) calc(75% - 10px);
+      grid-gap: 20px;
+  }
+
+  .magazine-cover {
+      padding-top: 58px;
+  }
+
+  .magazine-first-row {
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+  }
+
+  .magazine-first-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+  }
+
+  .magazine-second-row {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
   }
 }
 
