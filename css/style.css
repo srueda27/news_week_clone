@@ -433,20 +433,20 @@ main {
 }
 
 .magazine-last-img {
-    position: relative;
+  position: relative;
 }
 
 .magazine-last-tag {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
 }
 
 .magazine-last {
-    margin-top: 5px;
-    font-size: 20px;
-    line-height: 20px;
+  margin-top: 5px;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 /* #endregion magazine  */
@@ -525,24 +525,29 @@ main {
   }
 
   .magazine {
-      display: grid;
-      grid-template-columns: calc(25% - 10px) calc(75% - 10px);
-      grid-gap: 20px;
+    display: grid;
+    grid-template-columns: calc(25% - 10px) calc(75% - 10px);
+    grid-gap: 20px;
   }
 
   .magazine-cover {
-      padding-top: 58px;
+    padding-top: 58px;
+  }
+
+  .magazine-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .border-top-container {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
   }
 
   .magazine-first-row {
-      border-top: 1px solid #ddd;
-      padding-top: 20px;
-  }
-
-  .magazine-first-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
   }
 
   .magazine-second-row {
@@ -550,6 +555,12 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+  }
+
+  .editors-picks-container {
+    display: grid;
+    grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+    grid-gap: 30px;
   }
 }
 
@@ -625,6 +636,10 @@ main {
   main {
     position: relative;
     top: 151px;
+  }
+
+  .editors-picks-container {
+    grid-template-columns: repeat(4, calc(25% - 22.5px));
   }
 }
 
