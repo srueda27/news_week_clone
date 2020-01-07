@@ -305,13 +305,8 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
-  .three-column-container {
-    display: grid;
-    grid-template-columns: calc(45% - 15px) calc(55% - 15px);
-    grid-gap: 30px;
-    grid-template-areas:
-      "featured-stories center-column"
-      "right-column right-column";
+  .featured-stories {
+    order: -1;
   }
 
   .image--text {
@@ -328,16 +323,7 @@ main {
     height: 90px;
   }
 
-  .right-column {
-    grid-area: right-column;
-  }
-
-  .featured-stories {
-    grid-area: featured-stories;
-  }
-
   .center-column {
-    grid-area: center-column;
     display: grid;
     grid-template-areas:
       "top-story"
@@ -347,13 +333,6 @@ main {
 
   .top-story {
     grid-area: top-story;
-  }
-
-  .culture-travel-container {
-    grid-area: culture-travel;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
   }
 
   .more-stories {
@@ -433,23 +412,6 @@ main {
   main {
     position: relative;
     top: 151px;
-  }
-
-  .three-column-container {
-    grid-template-columns: calc(30% - 20px) calc(40% - 20px) calc(30% - 20px);
-    grid-template-areas: "left-column center-column right-column";
-  }
-
-  .featured-stories {
-    grid-area: left-column;
-  }
-
-  .center-column {
-    grid-area: center-column;
-  }
-
-  .right-column {
-    grid-area: right-column;
   }
 }
 
