@@ -3,9 +3,12 @@ html {
   min-width: 375px;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .section--title {
   font: bold 16px/16px 'Roboto Condensed', sans-serif;
-  text-transform: uppercase;
   color: rgba(3, 3, 3, 0.4);
   padding: 10px 0;
 }
@@ -47,7 +50,6 @@ html {
   background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
   color: red;
-  text-transform: uppercase;
   bottom: 0;
   left: 0;
 }
@@ -146,7 +148,7 @@ html {
   display: grid;
   grid-template-columns: 1fr max-content 35px;
   align-items: center;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .navbar-toggler {
@@ -270,13 +272,161 @@ main {
 .opinion__author {
   font: bold 14px/21px 'Roboto Condensed', sans-serif;
   color: #555;
-  text-transform: uppercase;
 }
 
 .latests-news__img {
   width: 135px;
   height: 90px;
 }
+
+/* #region conversations */
+.logo-section-title {
+    margin: 15px 0;
+}
+
+.logo-section-title__title {
+    font: bold 19px/19px 'Roboto Condensed', sans-serif;
+    color: #333333;
+    position: relative;
+    top: 5px;
+}
+
+.logo-section-title__logo {
+    width: 28px;
+    height: 28px;
+    background-color: red;
+    margin-right: 10px;
+}
+
+.conversations {
+    margin-bottom: 40px;
+}
+
+.conversations-img-container {
+    position: relative;
+    padding: 0;
+}
+
+.conversations-img {
+    display: block;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conversations-img-side {
+    padding: 10px 15px 10px 0;
+}
+
+.conversations-big-img {
+    background-image: url(../images/conversations/newsweek_conversations_paul_wesley.jpg);
+}
+
+.conversations-side {
+    border-top: 1px solid #ddd;
+}
+
+.conversations-side-first {
+    background-image: url(../images/conversations/newsweek_conversations_leslie_grossman.jpg);
+}
+
+.conversations-side-second {
+    background-image: url(../images/conversations/newsweek_conversations_willem_dafoe.jpg);
+}
+
+.conversations-side-third {
+    background-image: url(../images/conversations/newsweek_conversations_matthew_modine.jpg);
+}
+
+.play-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    background-color: red;
+}
+
+.play-icon-svg {
+    fill: white;
+}
+
+.conversations-text-container {
+    padding: 40px 25px 30px;
+    background-color: black;
+}
+
+.conversations-text-side {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.conversations-title {
+    font: 28px/32px 'Roboto Condensed', sans-serif;
+}
+
+.conversation-title-side {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.conversations-title__link {
+    text-decoration: none;
+    color: white;
+}
+
+.conversations-title__link:hover {
+    text-decoration: underline red;
+    color: white;
+}
+
+.conversations-description {
+    font: 15px/20px Arial, sans-serif;
+    color: #ffffff;
+}
+
+.conversations-time {
+    font: 18px/18px Arial, sans-serif;
+    color: #777777;
+}
+/* #endregion conversations */
+
+/* #region magazine  */
+.magazine-tag {
+    font: 16px/26px 'Roboto Condensed', sans-serif;
+    display: inline-block;
+    padding: 0 7px;
+    margin: 5px 0;
+}
+
+.red-tag {
+    background-color: red;
+    color: white;
+}
+
+.white-tag__link {
+    color: red;
+}
+
+.white-tag__link:hover {
+    color: red;
+}
+
+.magazine-title {
+    font: 16px/16px 'Roboto Condensed', sans-serif;
+}
+
+.magazine-title__link {
+    color: black;
+}
+
+.magazine-title__link:hover {
+    text-decoration: red underline;
+    color: black;
+}
+/* #endregion magazine  */
 
 /* #endregion main */
 
@@ -337,6 +487,18 @@ main {
 
   .more-stories {
     grid-area: more-stories;
+  }
+
+  .lside {
+    padding-right: 0;
+}
+
+.rside {
+    padding-left: 0;
+}
+
+  .conversations-text-order-first {
+      order: -1;
   }
 }
 
