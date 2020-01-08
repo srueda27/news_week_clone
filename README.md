@@ -1,6 +1,8 @@
 # news-week-clone
 Made a clone page from the [Newsweek](https://www.newsweek.com/) website.
 
+![Screenshot - 1920 x 1080 ](/public/screenshot.jpg?raw=true "Screenshot")
+
 # Technologies:
 - HTML
 - CSS
