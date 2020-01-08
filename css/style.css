@@ -470,6 +470,23 @@ main {
     color: #e9212e;
 }
 
+.border-TB {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0 10px;
+  }
+
+.bottom-section-title {
+    font: 22px/22px 'Roboto Condensed', sans-serif;
+}
+
+.bottom-section-title__link {
+    color: red;
+}
+
+.bottom-section-title__link:hover {
+    color: red;
+}
 /* #endregion main */
 
 /* #region media queries */
@@ -491,6 +508,11 @@ main {
   }
 
   .left-image {
+    width: 258px;
+    height: 172px;
+  }
+
+  .three-row-img__md {
     width: 258px;
     height: 172px;
   }
@@ -582,10 +604,15 @@ main {
     grid-gap: 20px 30px;
   }
 
-  .featured-slideshow-container {
+  .three-column-container {
     display: grid;
     grid-template-columns: repeat(3, calc(33.66% - 22.5px));
     grid-gap: 20px 30px;
+  }
+
+  .three-row-img__md {
+    width: 135px;
+    height: 90px;
   }
 }
 
