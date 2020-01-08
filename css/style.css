@@ -486,49 +486,49 @@ main {
 }
 
 /* #region last-section */
-.subscribe {
-    background-color: #f4f5f6;
+.subscribe-section {
+  background-color: #f4f5f6;
 }
 
 .subscribe-img {
-    width: 170px;
-    height: 227px;
+  width: 170px;
+  height: 227px;
 }
 
 .image-y-100 {
-    height: 100%;
+  height: 100%;
 }
 
 .last-section__title {
-    font: 16px/16px 'Roboto Condensed', sans-serif;
-    color: red;
+  font: 16px/16px 'Roboto Condensed', sans-serif;
+  color: red;
 }
 
 .last-section__img-title {
-    font: 24px/28px 'Roboto Condensed', sans-serif;
-    color:black;
+  font: 24px/28px 'Roboto Condensed', sans-serif;
+  color: black;
 }
 
 .last-section__img-text {
-    font: 15px/21px Arial, sans-serif;
-    color: #333333;
+  font: 15px/21px Arial, sans-serif;
+  color: #333;
 }
 
 .last-section__button {
-    font: 16px/20px 'Roboto Condensed', sans-serif;
-    background-color: red;
-    color: white;
-    padding: 5px 10px;
+  font: 16px/20px 'Roboto Condensed', sans-serif;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
 }
 
 .last-section__button:hover {
-    color: white;
+  color: white;
 }
 
 .fill-white {
-    fill: white;
-    position: relative;
-    top: -2px
+  fill: white;
+  position: relative;
+  top: -2px;
 }
 
 /* #endregion last-section */
