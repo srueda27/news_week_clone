@@ -469,10 +469,6 @@ main {
   padding: 20px 0 10px;
 }
 
-.border-B {
-  border-bottom: 1px solid #ddd;
-}
-
 .bottom-section-title {
   font: 22px/22px 'Roboto Condensed', sans-serif;
 }
@@ -534,6 +530,25 @@ main {
 /* #endregion last-section */
 
 /* #endregion main */
+
+/* Footer */
+.footer-brand {
+  fill: red;
+  width: 250px;
+  height: 48px;
+}
+
+.footer-links {
+  font: 14px/15px Arial, sans-serif;
+}
+
+.footer-links__link {
+  color: #666;
+}
+
+.footer-links__link:hover {
+  color: #666;
+}
 
 /* #region media queries */
 @media only screen and (min-width: 480px) {
