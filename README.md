@@ -11,7 +11,7 @@ Made a clone page from the [Newsweek](https://www.newsweek.com/) website.
 - Boostrap
 
 # Website:
-- Checkout our website at: [newsweek-clone](https://github.com/srueda27/news_week_clone)
+- Checkout our website at: [newsweek-clone](https://srueda27.github.io/news_week_clone/)
 
 # Contributors:
 - [Santiago Rueda](https://github.com/srueda27)
